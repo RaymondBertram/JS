@@ -49,4 +49,7 @@ console.log(firstName + ' ' + lastName)
 let x = 10 + 5; //15
 x += 10; // x = x + 10
 x *= 4; //x=x*4=100
+x++;
+x--;
+x--;
 console.log(x);
