@@ -1,3 +1,5 @@
+
+//BMI 
 const weightMark = 78;
 const heightMark = 1.69;
 
@@ -13,10 +15,12 @@ console.log(bodyMassIndexJohn1); //BMI John
 markHigherBMI1 = (bodyMassIndexMark1 > bodyMassIndexJohn1);
 console.log(markHigherBMI1);
 
+
+//if-else BMI
 if (bodyMassIndexJohn1 < bodyMassIndexMark1) {
-    console.log(`Marks BMI is ${bodyMassIndexMark1} and higher than John's!`)
+    console.log(`Marks BMI is (${bodyMassIndexMark1}) and higher than John's!(${bodyMassIndexJohn1})`);
 } else {
-    console.log(`John's BMI is ${bodyMassIndexJohn1}  higher than Mark's!`)
+    console.log(`John's BMI is ${bodyMassIndexJohn1}  higher than Mark's(${bodyMassIndexMark1})`);
 }
 
 
