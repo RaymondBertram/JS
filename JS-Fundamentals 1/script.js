@@ -82,9 +82,8 @@ const averageAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, averageAge);
 */
 
-
+/*
 const age = 15;
-
 if (age >= 18) {
     console.log('Sarah can start a driving license');
 } else {
@@ -101,3 +100,20 @@ if (birthYear1 <= 2000) {
     century = 21;
 }
 console.log(century);
+*/
+
+//Type Conversion 
+const inputYear = '1991';
+console.log(Number(inputYear), inputYear);
+console.log(Number(inputYear) + 18);
+
+console.log(Number('Jonas'));
+console.log(typeof NaN);
+
+console.log(String(23), 23);
+
+
+
+//Type Coercion
+
+
