@@ -80,3 +80,24 @@ console.log(x, y);
 
 const averageAge = (ageJonas + ageSarah) / 2
 console.log(ageJonas, ageSarah, averageAge);
+*/
+
+
+const age = 15;
+
+if (age >= 18) {
+    console.log('Sarah can start a driving license');
+} else {
+    const yearsLeft = 18 - age;
+    console.log(`Sarah is too young. wait another ${yearsLeft} years :)`);
+}
+
+
+let century;
+const birthYear1 = 1991;
+if (birthYear1 <= 2000) {
+    century = 20;
+} else {
+    century = 21;
+}
+console.log(century);
