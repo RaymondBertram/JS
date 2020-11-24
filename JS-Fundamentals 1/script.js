@@ -160,9 +160,11 @@ console.log(favourite);
 console.log(typeof favourite);
 
 if (favourite === 23) {//23 ===23---> true   22===23 --> false
-    console.log('Cool! 23 is an amazing number!')
+    console.log('Cool! 23 is an amazing number!');
 } else if (favourite === 7) {
     console.log('7 is also a cool number');
+} else if (favourite === 9) {
+    console.log('9 is also a cool number');
 } else {
     console.log('Number is not a 23 or 7')
 }
