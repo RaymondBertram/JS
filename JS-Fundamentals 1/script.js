@@ -100,9 +100,9 @@ if (birthYear1 <= 2000) {
     century = 21;
 }
 console.log(century);
-*/
 
-//Type Conversion 
+
+//Type Conversion
 const inputYear = '1991';
 console.log(Number(inputYear), inputYear);
 console.log(Number(inputYear) + 18);
@@ -124,4 +124,12 @@ console.log('23' > '18');
 let n = '1' + 1;
 n = n - 1;
 console.log(n)
+*/
 
+//5 falsy values: 0, 
+
+console.log(Boolean(0));
+console.log(Boolean(undefined));
+console.log(Boolean('Jonas'));
+console.log(Boolean({}));
+console.log(Boolean(''));
