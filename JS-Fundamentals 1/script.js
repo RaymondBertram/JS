@@ -147,7 +147,7 @@ if (height) {
 } else {
     console.log("Height is UNDEFINDED");
 }
-*/
+
 
 const age = '18';
 if (age === 18) console.log('You just became an adult :D (strict)');
@@ -170,5 +170,11 @@ if (favourite === 23) {//23 ===23---> true   22===23 --> false
 }
 
 if (favourite !== 23) console.log('Why not 23?');
+*/
 
+const hasDriverLicense = true; // A
+const hasGoodVision = false; //B 
+
+console.log(hasDriverLicense && hasGoodVision);
+console.log(hasDriverLicense || hasGoodVision);
 
