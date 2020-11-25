@@ -51,7 +51,7 @@ console.log(markHigherBMI2)
 if (bodyMassIndexJohn2 < bodyMassIndexMark2) {
     console.log(`Marks BMI is (${bodyMassIndexMark2}) and higher than John's!(${bodyMassIndexJohn2})`);
 } else {
-    console.log(`John's BMI is (${bodyMassIndexJohn2}) higher than Mark's(${bodyMassIndexMark2})`);
+    console.log(`John's BMI is (${bodyMassIndexJohn2}) higher than Mark's(${bodyMassIndexMark2})`); 
 
 }
 */
