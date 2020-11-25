@@ -1,5 +1,5 @@
-
-//BMI 
+/*
+//BMI
 const weightMark = 78;
 const heightMark = 1.69;
 
@@ -7,7 +7,7 @@ const weightJohn = 92;
 const heightJohn = 1.95;
 
 const bodyMassIndexMark1 = (weightMark) / (heightMark ** 2);
-console.log(bodyMassIndexMark1) //BMI Mark 
+console.log(bodyMassIndexMark1) //BMI Mark
 
 const bodyMassIndexJohn1 = (weightJohn) / (heightJohn ** 2)
 console.log(bodyMassIndexJohn1); //BMI John
@@ -52,8 +52,26 @@ if (bodyMassIndexJohn2 < bodyMassIndexMark2) {
     console.log(`Marks BMI is (${bodyMassIndexMark2}) and higher than John's!(${bodyMassIndexJohn2})`);
 } else {
     console.log(`John's BMI is (${bodyMassIndexJohn2}) higher than Mark's(${bodyMassIndexMark2})`);
+
+}
+*/
+
+//Coding-Challenge 3 
+//1
+const averageDolphins = (96 + 108 + 89) / 3;
+const averageKoalas = (88 + 91 + 110) / 3;
+console.log(averageDolphins, averageKoalas)
+
+//2
+if (averageKoalas > averageDolphins) {
+    console.log('Koalas win the competion!');
+} else if (averageDolphins > averageKoalas) {
+    console.log('Dolphins win the competition!');
+} else if (averageKoalas === averageDolphins) {
+    console.log('Both win the competition')
 }
 
+//Bonus 1 (3)
 
 
 
