@@ -35,5 +35,14 @@ console.log(appleJuice);
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
-const num = Number('23')
-console.log(num)
+
+function ballMachine(soccerballs, footballs, golfballs) {
+    const balls = `There are ${soccerballs} soccerballs, ${footballs} footballs and ${golfballs} golfballs!`;
+    return balls;
+}
+const differentBalls = ballMachine(2, 12, 4);
+console.log(differentBalls);
+
+const varietyBalls = ballMachine(100, 202, 1000);
+console.log(varietyBalls);
+
