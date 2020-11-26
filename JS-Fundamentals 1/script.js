@@ -242,7 +242,7 @@ if (day === 'monday') {
 age >= 18 ? console.log('I like to drink wine') :
     console.log('I like to drink water');
 */
-const age = 12;
+const age = 23;
 const drink = age >= 18 ? 'wine' : 'water';
 console.log(drink);
 
@@ -253,3 +253,23 @@ if (age >= 18) {
     drink2 = 'water';
 }
 console.log(drink2);
+
+
+//age
+console.log(`I like to drink ${age >= 18 ? 'wine' : 'water'}`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
