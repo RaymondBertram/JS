@@ -51,12 +51,12 @@ console.log(markHigherBMI2)
 if (bodyMassIndexJohn2 < bodyMassIndexMark2) {
     console.log(`Marks BMI is (${bodyMassIndexMark2}) and higher than John's!(${bodyMassIndexJohn2})`);
 } else {
-    console.log(`John's BMI is (${bodyMassIndexJohn2}) higher than Mark's(${bodyMassIndexMark2})`); 
+    console.log(`John's BMI is (${bodyMassIndexJohn2}) higher than Mark's(${bodyMassIndexMark2})`);
 
 }
-*/
 
-//Coding-Challenge 3 
+
+//Coding-Challenge 3
 //1
 const averageDolphins = (96 + 108 + 89) / 3;
 const averageKoalas = (88 + 91 + 110) / 3;
@@ -86,6 +86,10 @@ if (scoreDolphins > scoreKoalas && scoreDolphins >= 100) {
 } else {
     console.log('No one wins the trophy!')
 }
+*/
 
+const bill = 40;
+const tip = bill <= 300 && bill >= 50 ? bill * 0.15 : bill * 0.2;
+console.log(`The bill was ${bill}, the tip was ${tip}, and the total value ${bill + tip} `);
 
 
