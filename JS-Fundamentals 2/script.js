@@ -22,6 +22,13 @@ logger();
 logger();
 logger();
 
+function broName() {
+    console.log('We are just having fun bro!')
+}
+
+broName();
+broName();
+broName();
 
 //Fruit-Processor
 function fruitProcessor(apples, oranges) {
@@ -35,7 +42,7 @@ console.log(appleJuice);
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
-
+//Ball-Machine 
 function ballMachine(soccerballs, footballs, golfballs) {
     const balls = `There are ${soccerballs} soccerballs, ${footballs} footballs and ${golfballs} golfballs!`;
     return balls;
