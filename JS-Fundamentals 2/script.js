@@ -11,7 +11,7 @@ if (hasDriversLicense) console.log('I can drive :D');
 
 
 
-*/
+
 
 function logger() {
     console.log('My name is Jonas')
@@ -52,4 +52,19 @@ console.log(differentBalls);
 
 const varietyBalls = ballMachine(100, 202, 1000);
 console.log(varietyBalls);
+*/
 
+//Function declaration
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+const age1 = calcAge1(1991);
+
+
+//Function expression 
+const calcAge2 = function (birthYear) {
+    return 2037 - birthYear;
+}
+const age2 = calcAge2(1991);
+
+console.log(age1, age2)
