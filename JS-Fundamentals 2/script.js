@@ -42,7 +42,7 @@ console.log(appleJuice);
 const appleOrangeJuice = fruitProcessor(2, 4);
 console.log(appleOrangeJuice);
 
-//Ball-Machine 
+//Ball-Machine Practise
 function ballMachine(soccerballs, footballs, golfballs) {
     const balls = `There are ${soccerballs} soccerballs, ${footballs} footballs and ${golfballs} golfballs!`;
     return balls;
