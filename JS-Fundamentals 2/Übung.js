@@ -77,7 +77,7 @@ console.log('I am 20 years old!');
  }else{
      console.log('You picked the wrong number!')
  }
-*/
+
 
  const hasDriversLicense = true; //A
  const hasGoodVision = true; //B 
@@ -104,7 +104,7 @@ if(hasDriversLicense && hasGoodVision && !isTired && !drankAlk){
 } else {
     console.log('Start drinking and stop driving!')
 }
-//Average 
+//Average 1
 const averageTeamA = (23+56+30+45)/4;
 const averageTeamB = (33+22+40+70)/4; 
 console.log(averageTeamA,averageTeamB); 
@@ -120,7 +120,22 @@ if (averageTeamA>averageTeamB){
 } else if (averageTeamA===averageTeamB) {
     console.log('Both teams have the same average!'); 
 }
+*/
+//Average 2 mit Bedingung das Durchschnitt mind. 45 ist.  
 
+const averageTeamA = (33+56+30+70)/4;
+const averageTeamB = (33+56+40+70)/4; 
+console.log(averageTeamA,averageTeamB); 
+
+if(averageTeamA>averageTeamB && averageTeamA>=45){
+    console.log('Team A Higher Average!');
+} else if(averageTeamB>averageTeamA && averageTeamB>=45){
+    console.log('Team B Higher Average!');
+}else if(averageTeamA===averageTeamB && averageTeamA>=45 && averageTeamB>=45){
+    console.log('Both Have the Same Average!')
+}else{
+    console.log('Nobody Have At Least 45 Average!')
+}
 
 
 
