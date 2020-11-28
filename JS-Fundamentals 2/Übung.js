@@ -82,8 +82,7 @@ console.log('I am 20 years old!');
  const hasDriversLicense = true; //A
  const hasGoodVision = true; //B 
  const isTired = false;  //C
-console.log(hasDriversLicense&&hasGoodVision); 
-console.log(hasDriversLicense||hasGoodVision); 
+ const drankAlk = false; //D
 
 //1
 if (hasDriversLicense&&hasGoodVision){
@@ -99,7 +98,12 @@ console.log('You can drive and pace through the streets!')
     console.log('Someone else should drive...Dont sleep and drive!')
 }
 
-
+//3
+if(hasDriversLicense && hasGoodVision && !isTired && !drankAlk){
+    console.log('You are a streetracer..Lets pace and race!')
+} else {
+    console.log('Start drinking and stop driving!')
+}
 
 
 
