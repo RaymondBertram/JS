@@ -104,6 +104,22 @@ if(hasDriversLicense && hasGoodVision && !isTired && !drankAlk){
 } else {
     console.log('Start drinking and stop driving!')
 }
+//Average 
+const averageTeamA = (23+56+30+45)/4;
+const averageTeamB = (33+22+40+70)/4; 
+console.log(averageTeamA,averageTeamB); 
+
+let averageBothTeams = (averageTeamA+averageTeamB);
+console.log(averageBothTeams); 
+
+if (averageTeamA>averageTeamB){
+    console.log('Average of Team A ist higher than Team B!');
+} else if(averageTeamB>averageTeamA){
+    console.log('Average of Team B ist higher than Team A!'); 
+
+} else if (averageTeamA===averageTeamB) {
+    console.log('Both teams have the same average!'); 
+}
 
 
 
