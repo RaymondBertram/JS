@@ -136,7 +136,7 @@ if(averageTeamA>averageTeamB && averageTeamA>=45){
 }else{
     console.log('Nobody Have At Least 45 Average!')
 }
-*/
+
 //Switch statement 
 // VAR 1
 const day ='monday';
@@ -182,3 +182,36 @@ if(day1==='monday'){
     console.log('Not a valid day!'); 
 }
 
+
+
+const age =18;
+age>=18 ? console.log('I like to drink Vodka!'):
+console.log('I like to drink water!');
+
+const age2= 12;
+console.log(`I like to drink ${age2>=18 ? 'wine': 'water'}`);
+*/
+
+function logger(){
+    console.log('My name is Ray!');
+}
+logger(); 
+logger(); 
+logger(); 
+
+function fruitProcessor(apples, oranges){
+    const juice =`Juice with ${apples} apples and ${oranges} oranges`;
+    return juice;
+}
+const appleJuice = fruitProcessor(10, 0);
+console.log(appleJuice); 
+
+const appleOrangeJuice= fruitProcessor(10,20);
+console.log(appleOrangeJuice); 
+
+function vegetableMachine(cucumber, lettuce, paprika, feta){
+    const salad = `It's a mixed salade with ${cucumber} cucumber, ${lettuce} lettuce, ${paprika} paprika and ${feta} pieces of feta cheese!`;
+    return salad;
+}
+const mixSalad = vegetableMachine(1,4,2,20);
+console.log(mixSalad); 
