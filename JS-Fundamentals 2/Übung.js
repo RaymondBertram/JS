@@ -120,7 +120,7 @@ if (averageTeamA>averageTeamB){
 } else if (averageTeamA===averageTeamB) {
     console.log('Both teams have the same average!'); 
 }
-*/
+
 //Average 2 mit Bedingung das Durchschnitt mind. 45 ist.  
 
 const averageTeamA = (33+56+30+70)/4;
@@ -136,10 +136,10 @@ if(averageTeamA>averageTeamB && averageTeamA>=45){
 }else{
     console.log('Nobody Have At Least 45 Average!')
 }
-
+*/
 //Switch statement 
 // VAR 1
-const day ='tuesday';
+const day ='monday';
 switch (day){
     case 'monday': 
         console.log('Standup-Meeting');
@@ -164,6 +164,21 @@ switch (day){
 }
 
 //VAR 2
+const day1 ='monday';
 
-
+if(day1==='monday'){
+    console.log("Shit, it's Monday!");
+} else if(day1==='tuesday'){
+    console.log('Stop crying!');
+} else if(day1==='wednesday'){
+    console.log('Wait another 2 day!');
+}else if(day1==='thursday'){
+    console.log('Drink wine!');
+} else if(day1==='friday'){
+    console.log('Hurray!');
+}else if(day1==='saturday'||day1==='sunday'){
+    console.log('Weekend');
+}else{
+    console.log('Not a valid day!'); 
+}
 
