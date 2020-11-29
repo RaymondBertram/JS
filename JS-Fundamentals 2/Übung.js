@@ -137,7 +137,33 @@ if(averageTeamA>averageTeamB && averageTeamA>=45){
     console.log('Nobody Have At Least 45 Average!')
 }
 
+//Switch statement 
+// VAR 1
+const day ='tuesday';
+switch (day){
+    case 'monday': 
+        console.log('Standup-Meeting');
+        console.log('Programming');
+    break;
+    case 'tuesday':
+        console.log('Developermeeting');
+        console.log('Drinking wine!');
+    break; 
+    case 'wednesday':
+        console.log('Chillax');
+    break;
+    case 'thursday':
+        console.log('Glad that soon will be friday!');
+    break;
+    case 'saturday':
+    case 'sunday':
+        console.log('Enjoy the weekend!');
+    break;
+    default:
+        console.log('Not a valid day');
+}
 
+//VAR 2
 
 
 
