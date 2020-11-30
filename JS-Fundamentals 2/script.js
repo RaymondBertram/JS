@@ -89,7 +89,7 @@ const yearsUntilRetirement = (birthYear, firstName) => {
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1980, 'Bob'));
 
-*/
+
 const cutPieces = function (fruit) {
     return fruit * 4;
 }
@@ -101,3 +101,17 @@ function fruitProcessor(apples, oranges) {
     return juice;
 }
 console.log(fruitProcessor(2, 3));
+*/
+const cutPieces = function (fruit) {
+    return fruit * 4;
+}
+
+function fruitProcessor(apples, oranges, pineapples) {
+    const applePieces = cutPieces(apples);
+    const orangePieces = cutPieces(oranges);
+    const pineapplePieces = cutPieces(pineapples);
+    const juice = `Juice with ${applePieces} pieces of apple, ${pineapplePieces} pieces of pineapple and ${orangePieces} pieces of orange.`;
+    return juice;
+}
+console.log(fruitProcessor(2, 3, 4));
+
