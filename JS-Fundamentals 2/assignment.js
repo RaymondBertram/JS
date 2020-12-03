@@ -9,36 +9,12 @@
 //Otherwise, no team wins!
 //Your tasks:
 //1. Create an arrow function 'calcAverage' to calculate the average of 3 scores
-
-const calcAverage = (a, b, c) => (a + b + c) / 3;
-console.log(calcAverage(1, 3, 5));
-
-
-
 //2. Use the function to calculate the average for both teams
-
 //Test 1
-const scoreDolphins = calcAverage(44, 23, 71);
-const scoreKoalas = calcAverage(65, 54, 49);
-console.log(scoreDolphins, scoreKoalas);
-
 //3. Create a function 'checkWinner' that takes the average score of each team
 //as parameters('avgDpolhins' and 'avgKoalas'), and then logs the winner
 //to the console, together with the victory points, according to the rule above.
 //    Example: "Koalas win (30 vs. 13)"
-
-const checkWinner = function (avgDolphins, avgKoalas) {
-    if (avgDolphins >= 2 * avgKoalas) {
-        console.log(`Dolphins win the trophy (${avgpDolhins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= 2 * avgDolphins) {
-        console.log(`Koalas win the Trophy (${avgKoalas} vs. ${avgDolphins})`);
-    } else {
-        console.log('Nobody wins the trophy!');
-    }
-}
-checkWinner(scoreDolphins, scoreKoalas);
-
-
 //4. Use the 'checkWinner' function to determine the winner for both Data 1 and
 //Data 2
 //5. Ignore draws this time
@@ -46,6 +22,21 @@ checkWinner(scoreDolphins, scoreKoalas);
 //§ Data 1: Dolphins score 44, 23 and 71. Koalas score 65, 54 and 49
 //§ Data 2: Dolphins score 85, 54 and 41. Koalas score 23, 34 and 27
 
+const calcAverage = (a, b, c) => (a + b + c) / 3;
+console.log(calcAverage(1, 3, 5));
 
+const scoreDolphins = calcAverage(44, 23, 71);
+const scoreKoalas = calcAverage(65, 54, 49);
+console.log(scoreDolphins, scoreKoalas);
 
-
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win the trophy (${avgDolphins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas win the Trophy (${avgKoalas} vs. ${avgDolphins})`);
+    } else {
+        console.log('Nobody wins the trophy!');
+    }
+}
+checkWinner(scoreDolphins, scoreKoalas);
+checkWinner((85 + 54 + 41) / 3, (23 + 34 + 27) / 3);
