@@ -138,7 +138,7 @@ const yearsUntilRetirement = function (birthYear, firstName) {
 }
 console.log(yearsUntilRetirement(1991, 'Jonas'));
 console.log(yearsUntilRetirement(1970, 'Mike'));
-*/
+
 
 function calcAge(birthYear, lastName) {
     const age = 2060 - birthYear;
@@ -147,3 +147,13 @@ function calcAge(birthYear, lastName) {
 }
 const age = calcAge(1955, 'Mikeal');
 const numers = calcAge(1970, 'Bruno');
+*/
+
+
+
+
+
+
+
+
+
