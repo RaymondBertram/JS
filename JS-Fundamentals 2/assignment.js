@@ -23,15 +23,15 @@ const scoreKoalas = calcAverage(65, 54, 49);
 console.log(scoreDolphins, scoreKoalas);
 
 //3. Create a function 'checkWinner' that takes the average score of each team
-//as parameters('avgDolhins' and 'avgKoalas'), and then logs the winner
+//as parameters('avgDpolhins' and 'avgKoalas'), and then logs the winner
 //to the console, together with the victory points, according to the rule above.
 //    Example: "Koalas win (30 vs. 13)"
 
-const checkWinner = function (avgDolhins, avgKoalas) {
-    if (avgDolhins >= 2 * avgKoalas) {
-        console.log(`Dolphins win the trophy (${avgDolhins} vs. ${avgKoalas})`);
-    } else if (avgKoalas >= 2 * avgDolhins) {
-        console.log(`Koalas win the Trophy (${avgKoalas} vs. ${avgDolhins})`);
+const checkWinner = function (avgDolphins, avgKoalas) {
+    if (avgDolphins >= 2 * avgKoalas) {
+        console.log(`Dolphins win the trophy (${avgpDolhins} vs. ${avgKoalas})`);
+    } else if (avgKoalas >= 2 * avgDolphins) {
+        console.log(`Koalas win the Trophy (${avgKoalas} vs. ${avgDolphins})`);
     } else {
         console.log('Nobody wins the trophy!');
     }
