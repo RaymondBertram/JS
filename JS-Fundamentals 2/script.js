@@ -154,7 +154,7 @@ const friend1 = 'Michael';
 const friend2 = 'Steven';
 const friend3 = 'Peter'
 
-const friends = ['Micheal', 'Steven', 'Steven'];
+const friends = ['Micheal', 'Steven', 'Peter'];
 console.log(friends);
 
 const years = new Array(1991, 1984, 2008, 2020);
@@ -166,6 +166,10 @@ console.log(years[1]);
 
 console.log(friends.length);
 console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay'; //changed the array
+console.log(friends);
+// friends = ['Bob', 'Alice']--> does not work because you can change only one
 
 
 
