@@ -150,19 +150,24 @@ const numers = calcAge(1970, 'Bruno');
 */
 
 
-//Arrow function
-const calcAge3 = birthYear => 2037 - birthYear;
-const age3 = calcAge3(1991);
-console.log(age3);
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter'
 
-const yearsUntilRetirement = (birthYear, firstName) => {
-    const age = 2037 - birthYear;
-    const retirement = 64 - age;
-    return `${firstName} retires in ${retirement} years`;
-}
+const friends = ['Micheal', 'Steven', 'Steven'];
+console.log(friends);
 
-console.log(yearsUntilRetirement(1991, 'Jonas'));
-console.log(yearsUntilRetirement(1980, 'Bob'));
+const years = new Array(1991, 1984, 2008, 2020);
+console.log(years);
+
+console.log(friends[0]);
+console.log(friends[2]);
+console.log(years[1]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+
 
 
 
