@@ -171,6 +171,11 @@ friends[2] = 'Jay'; //changed the array
 console.log(friends);
 // friends = ['Bob', 'Alice']--> does not work because you can change only one
 
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+
+console.log(jonas);
+console.log(jonas.length);
 
 
 
