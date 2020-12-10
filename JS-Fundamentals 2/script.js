@@ -211,6 +211,19 @@ const popped = friends.pop();
 console.log(popped);
 console.log(friends);
 
+friends.shift(); //First
+console.log(friends);
 
+console.log(friends.indexOf('Steven'));
+console.log(friends.indexOf('Bob'));
 
+friends.push(23);
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bob'));
+console.log(friends.includes(23));
 
+console.log(friends);
+
+if (friends.includes('Steven')) {
+    console.log('You have a friends called Steven!')
+}
