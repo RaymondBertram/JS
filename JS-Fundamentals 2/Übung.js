@@ -190,7 +190,7 @@ console.log('I like to drink water!');
 
 const age2= 12;
 console.log(`I like to drink ${age2>=18 ? 'wine': 'water'}`);
-*/
+
 
 function logger(){
     console.log('My name is Ray!');
@@ -214,4 +214,8 @@ function vegetableMachine(cucumber, lettuce, paprika, feta){
     return salad;
 }
 const mixSalad = vegetableMachine(1,4,2,20);
-console.log(mixSalad); 
+console.log(mixSalad);
+ */
+
+
+ 
