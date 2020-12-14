@@ -218,33 +218,33 @@ console.log(mixSalad);
  */
 
 //Normal function
- function greet(name, lastName){
-     console.log(`Hey ${name} ${lastName} !`)
- }
-
- greet('Colin', 'Bertram'); 
- greet('Ray', 'Bertram'); 
-
- const calcAge2 = birthYear =>2050 - birthYear;
-
-
-function sum(a,b){
-    return a + b 
+function greet(name, lastName) {
+    console.log(`Hey ${name} ${lastName} !`)
 }
-console.log(sum(105.5,202.5)); 
 
-const sum2 = (a,b)=> a + b; 
+greet('Colin', 'Bertram');
+greet('Ray', 'Bertram');
 
-console.log(sum2(4,5));
 
-function isPositive(number){
+const calcAge2 = birthYear => 2050 - birthYear;
+
+console.log(calcAge2(1945));
+function sum(a, b) {
+    return a + b
+}
+console.log(sum(105.5, 202.5));
+
+const sum2 = (a, b) => a + b;
+
+console.log(sum2(4, 5));
+
+function isPositive(number) {
     return number >= 0
 }
 
-let isPositive2 =(number)=> number>=0; 
-console.log(isPositive2(-1)); 
+let isPositive2 = (number) => number >= 0;
+console.log(isPositive2(-1));
 
-function randomNumber(){
-    return Math.random
-}
-console.log(randomNumber(4)); 
+const addition = (a, b, c) => a + b + c;
+console.log(addition(100, 150, 250));
+
