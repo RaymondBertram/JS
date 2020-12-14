@@ -280,5 +280,17 @@ if (average1 > average2) {
     console.log('Lol!')
 }
 
+function genderMix(men, woman) {
+    console.log(men, woman);
+    const gender = `There are ${men} men and ${woman} woman! `;
+    return gender;
+}
+console.log(genderMix(10, 12));
+console.log(genderMix);
+genderMix(10, 12);
+
+
+
+
 
 
