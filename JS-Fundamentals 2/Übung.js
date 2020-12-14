@@ -3,39 +3,39 @@
 const now= 2020;
 const ageRay = now -2000;
 const ageColin=now-2001;
-console.log(ageColin, ageRay); 
+console.log(ageColin, ageRay);
 
 console.log(ageColin**2, ageRay*2);
 
 const firstName= 'Raymond';
-const firstName1='Colin'; 
+const firstName1='Colin';
 const lastName='Bertram';
 console.log(firstName+" "+lastName);
 console.log(firstName1+" "+lastName);
 
 let x= 15+5; //20
 x+=10; //20+10=30
-x-=10; 
-console.log(x); 
+x-=10;
+console.log(x);
 
 console.log(ageColin>ageRay);
-console.log(ageColin>=18);  
+console.log(ageColin>=18);
 
 const isFullAge = ageRay>=18;
 console.log(now-2000>now-2001);
 
 const averageAge =(ageColin+ageRay)/2;
-console.log(ageColin, ageRay, averageAge); 
+console.log(ageColin, ageRay, averageAge);
 
 
 const firstName='Ray';
-const lastName ='Bertram'; 
+const lastName ='Bertram';
 const job='IT-Expert';
 const birthDate='16.08.2000';
 const year='2046';
 
 const infoRay=(`I'm ${firstName} ${lastName} and i was born on the ${birthDate}. In ${year} i will be a ${job} ! `);
-console.log(infoRay); 
+console.log(infoRay);
 
 const age=14;
 const canDrinkBeer = age>=16;
@@ -49,13 +49,13 @@ if (canDrinkBeer){
 
 const inputYear='1966';
 console.log(Number(inputYear), inputYear);
-console.log(Number(inputYear)+18); 
+console.log(Number(inputYear)+18);
 
 let x=2+3+4+5-'6';
-x=x+2+'2'; 
+x=x+2+'2';
 console.log(x);
 
-console.log('I am 20 years old!'); 
+console.log('I am 20 years old!');
 
 
  const age =18;
@@ -64,10 +64,10 @@ console.log('I am 20 years old!');
  } else{
      console.log('Your are not 18!');
  }
- 
+
  const favourite = Number(prompt("What's your favourite number?"));
  console.log(favourite);
- 
+
  if(favourite===16) {
      console.log('Best number in the world!')
  }else if (favourite===21){
@@ -80,7 +80,7 @@ console.log('I am 20 years old!');
 
 
  const hasDriversLicense = true; //A
- const hasGoodVision = true; //B 
+ const hasGoodVision = true; //B
  const isTired = false;  //C
  const drankAlk = false; //D
 
@@ -89,7 +89,7 @@ if (hasDriversLicense&&hasGoodVision){
     console.log('You are able to drive the car!')
 } else{
     console.log('Dont drive!')
-    
+
 }
 //2
 if (hasDriversLicense && hasGoodVision && !isTired){
@@ -106,26 +106,26 @@ if(hasDriversLicense && hasGoodVision && !isTired && !drankAlk){
 }
 //Average 1
 const averageTeamA = (23+56+30+45)/4;
-const averageTeamB = (33+22+40+70)/4; 
-console.log(averageTeamA,averageTeamB); 
+const averageTeamB = (33+22+40+70)/4;
+console.log(averageTeamA,averageTeamB);
 
 let averageBothTeams = (averageTeamA+averageTeamB);
-console.log(averageBothTeams); 
+console.log(averageBothTeams);
 
 if (averageTeamA>averageTeamB){
     console.log('Average of Team A ist higher than Team B!');
 } else if(averageTeamB>averageTeamA){
-    console.log('Average of Team B ist higher than Team A!'); 
+    console.log('Average of Team B ist higher than Team A!');
 
 } else if (averageTeamA===averageTeamB) {
-    console.log('Both teams have the same average!'); 
+    console.log('Both teams have the same average!');
 }
 
-//Average 2 mit Bedingung das Durchschnitt mind. 45 ist.  
+//Average 2 mit Bedingung das Durchschnitt mind. 45 ist.
 
 const averageTeamA = (33+56+30+70)/4;
-const averageTeamB = (33+56+40+70)/4; 
-console.log(averageTeamA,averageTeamB); 
+const averageTeamB = (33+56+40+70)/4;
+console.log(averageTeamA,averageTeamB);
 
 if(averageTeamA>averageTeamB && averageTeamA>=45){
     console.log('Team A Higher Average!');
@@ -137,18 +137,18 @@ if(averageTeamA>averageTeamB && averageTeamA>=45){
     console.log('Nobody Have At Least 45 Average!')
 }
 
-//Switch statement 
+//Switch statement
 // VAR 1
 const day ='monday';
 switch (day){
-    case 'monday': 
+    case 'monday':
         console.log('Standup-Meeting');
         console.log('Programming');
     break;
     case 'tuesday':
         console.log('Developermeeting');
         console.log('Drinking wine!');
-    break; 
+    break;
     case 'wednesday':
         console.log('Chillax');
     break;
@@ -179,7 +179,7 @@ if(day1==='monday'){
 }else if(day1==='saturday'||day1==='sunday'){
     console.log('Weekend');
 }else{
-    console.log('Not a valid day!'); 
+    console.log('Not a valid day!');
 }
 
 
@@ -195,19 +195,19 @@ console.log(`I like to drink ${age2>=18 ? 'wine': 'water'}`);
 function logger(){
     console.log('My name is Ray!');
 }
-logger(); 
-logger(); 
-logger(); 
+logger();
+logger();
+logger();
 
 function fruitProcessor(apples, oranges){
     const juice =`Juice with ${apples} apples and ${oranges} oranges`;
     return juice;
 }
 const appleJuice = fruitProcessor(10, 0);
-console.log(appleJuice); 
+console.log(appleJuice);
 
 const appleOrangeJuice= fruitProcessor(10,20);
-console.log(appleOrangeJuice); 
+console.log(appleOrangeJuice);
 
 function vegetableMachine(cucumber, lettuce, paprika, feta){
     const salad = `It's a mixed salade with ${cucumber} cucumber, ${lettuce} lettuce, ${paprika} paprika and ${feta} pieces of feta cheese!`;
@@ -215,7 +215,7 @@ function vegetableMachine(cucumber, lettuce, paprika, feta){
 }
 const mixSalad = vegetableMachine(1,4,2,20);
 console.log(mixSalad);
- */
+
 
 //Normal function
 function greet(name, lastName) {
@@ -290,7 +290,36 @@ console.log(genderMix);
 genderMix(10, 12);
 
 
+const calcAge2 = function (birthYear) {
+    return 2050 - birthYear;
+}
+const age1 = calcAge2(1990);
+const age2 = calcAge2(1995);
+const age3 = calcAge2(1400)
+
+console.log(age1, age2, age3); 
 
 
+const calcAge = birthYear => 2090 - birthYear;
 
+const age4 = calcAge(1990);
+console.log(age4);
+*/
 
+const calcAvg = (a, b, c) => (a + b + c) / 3;
+
+const avg = calcAvg(10, 40, 10);
+console.log(avg);
+
+const avg2 = calcAvg(10, 50, 5);
+console.log(avg2);
+
+if (avg > avg2 && avg >= 20) {
+    console.log(`With the average score of ${avg}, Team 1 wins!`)
+} else if (avg < avg2 && avg2 >= 20) {
+    console.log(`With the average score of ${avg2}, Team 2 wins! `)
+} else if (avg === avg2 && avg >= 20 && avg2 >= 20) {
+    console.log(`With the score ${avg} both teams win!`)
+} else {
+    console.log('Nobody wins!')
+}
