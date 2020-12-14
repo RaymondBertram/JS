@@ -248,3 +248,37 @@ console.log(isPositive2(-1));
 const addition = (a, b, c) => a + b + c;
 console.log(addition(100, 150, 250));
 
+console.log(typeof (addition));
+
+
+const a = -1;
+const b = 2 + 2;
+const c = -6;
+
+
+if (a + b + c >= 0) {
+    console.log('The number is above 0!');
+} else {
+    console.log('The number is beneath 0!');
+}
+
+const average1 = (10 + 10 + 10 + 30) / 4;
+const average2 = (15 + 20 + 5 + 16) / 4;
+
+const average3 = (10 + 13 + 7 + 10) / 4;
+const average4 = (10 + 80 + 0 + 5) / 4;
+
+console.log(average1, average2, average3, average4);
+
+if (average1 > average2) {
+    console.log('The average of Team 1 is higher than Team 2!');
+} else if (average1 < average2) {
+    console.log('The average of Team 2 is higher than Team 1!')
+} else if (average1 === average2) {
+    console.log('They have the same average!')
+} else {
+    console.log('Lol!')
+}
+
+
+
