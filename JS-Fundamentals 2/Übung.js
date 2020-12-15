@@ -344,5 +344,22 @@ const age5 = calcAge2(1991);
 const age6 = calcAge2(2000);
 
 console.log(age5, age6);
+
+
+//Arrow function
+
+const averageNumber = (a, b, c, d) => (a + b + c + d) / 4;
+
+let average1 = averageNumber(1, 2, 3, 4);
+console.log(average1);
+
+average1 = averageNumber(2, 4, 6, 8);
+console.log(average1);
+
+average1 = averageNumber(10, 10, 10, 10);
+console.log(average1);
 */
+
+
+
 
