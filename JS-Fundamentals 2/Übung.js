@@ -360,6 +360,24 @@ average1 = averageNumber(10, 10, 10, 10);
 console.log(average1);
 */
 
+//Function in other functions 
+
+const cutPieces = function (fruit) {
+    return fruit * 8
+}
+function fruitProcessor(mangos, pineapple, kiwi) {
+    const mangoPieces = cutPieces(mangos);
+    const pineapplePieces = cutPieces(pineapple);
+    const kiwiPieces = cutPieces(kiwi);
+    const fruitSalad = `The fruitsalad has ${mangoPieces} Mango-Pieces, ${pineapplePieces} Pineapple-Pieces and ${kiwiPieces} Kiwi-Pieces!`
+    return fruitSalad;
+}
+const salad1 = fruitProcessor(5, 2, 3);
+const salad2 = fruitProcessor(1, 4, 2);
+let salad3 = fruitProcessor(100, 22, 12);
+console.log(salad1);
+console.log(salad2);
+console.log(salad3);
 
 
 
