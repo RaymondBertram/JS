@@ -305,7 +305,7 @@ const calcAge = birthYear => 2090 - birthYear;
 const age4 = calcAge(1990);
 console.log(age4);
 
-
+//Function and IF-Clauses
 const calcAvg = (a, b, c) => (a + b + c) / 3;
 
 const avg = calcAvg(10, 40, 10);
@@ -323,7 +323,26 @@ if (avg > avg2 && avg >= 20) {
 } else {
     console.log('Nobody wins!')
 }
-*/
 
-//Function and IF-Clauses 
+
+//function declaration
+function calcAge1(birthYear) {
+    return 2037 - birthYear;
+}
+const age1 = calcAge1(1991);
+const age2 = calcAge1(2000);
+const age3 = calcAge1(2001);
+const age4 = calcAge1(2002);
+
+console.log(age1, age2, age3, age4);
+
+//function expression
+const calcAge2 = function (birthYear1) {
+    return 2070 - birthYear1;
+}
+const age5 = calcAge2(1991);
+const age6 = calcAge2(2000);
+
+console.log(age5, age6);
+*/
 
