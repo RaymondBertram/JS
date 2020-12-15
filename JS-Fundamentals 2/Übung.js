@@ -450,7 +450,7 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[1]), calcAge(years[2]), calcAge(years[years.length - 1])];
 
 console.log(ages);
-*/
+
 
 const friends = ['Michael', 'Steven', 'Bernd', 'Dennis'];
 console.log(friends);
@@ -478,7 +478,15 @@ if (friends.includes('Bob')) {
     console.log('Who is this?');
 }
 
+*/
+//Ternary Operator 
+const age = 23;
+age >= 18 ? console.log('I like to drink wine!') : console.log('I like to drink juice or water');
 
+const age2 = 65;
+age2 >= 65 ? console.log('You are to old to work!') : console.log('Workbee!');
 
-
+let gender = 'female';
+gender = 'male'
+gender === 'male' ? console.log('You are a man!') : console.log('You are a woman!');
 
