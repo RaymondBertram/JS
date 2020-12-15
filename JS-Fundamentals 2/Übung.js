@@ -478,8 +478,8 @@ if (friends.includes('Bob')) {
     console.log('Who is this?');
 }
 
-*/
-//Ternary Operator 
+
+//Ternary Operator
 const age = 23;
 age >= 18 ? console.log('I like to drink wine!') : console.log('I like to drink juice or water');
 
@@ -489,4 +489,8 @@ age2 >= 65 ? console.log('You are to old to work!') : console.log('Workbee!');
 let gender = 'female';
 gender = 'male'
 gender === 'male' ? console.log('You are a man!') : console.log('You are a woman!');
+*/
+
+
+
 
