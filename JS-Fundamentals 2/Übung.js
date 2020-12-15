@@ -398,4 +398,24 @@ console.log(vSalad1);
 console.log(vSalad2);
 */
 
+const calcAge = year => 2020 - year;
 
+const yearsUntilRetirement = function (birthYear, lastName, firstName) {
+    const age = calcAge(birthYear);
+    const retirement = 65 - age;
+    if (retirement > 0) {
+        console.log(`${firstName} ${lastName} retires in ${retirement} years!`)
+        return retirement;
+    } else {
+        console.log(`${firstName} ${lastName} has already retired!`)
+        return 65 - age;
+    }
+}
+
+const person1 = yearsUntilRetirement(2000, 'Bertram', 'Raymond');
+const person2 = yearsUntilRetirement(1964, 'Bertram', 'Harry');
+const person3 = yearsUntilRetirement(1933, 'Bertram', 'Jayden');
+
+console.log(person1);
+console.log(person2);
+console.log(person3);
