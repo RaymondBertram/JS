@@ -358,9 +358,9 @@ console.log(average1);
 
 average1 = averageNumber(10, 10, 10, 10);
 console.log(average1);
-*/
 
-//Function in other functions 
+
+//Function in other functions
 
 const cutPieces = function (fruit) {
     return fruit * 8
@@ -379,5 +379,23 @@ console.log(salad1);
 console.log(salad2);
 console.log(salad3);
 
+//Functions in other Functions 2
+
+const cutPieces2 = vegetable => vegetable * 0.5; //Arrow
+
+function vegetableProcessor(tomato, rice, potatoe) {
+    const tomatoPieces = cutPieces2(tomato);
+    const ricePieces = cutPieces2(rice);
+    const potatoePieces = cutPieces2(potatoe);
+    const veggieSalad = `The veggie-salad has ${tomatoPieces} tomato-pieces, ${ricePieces} rice-pieces and ${potatoePieces} potato-pieces!`;
+    return veggieSalad;
+} //Function declaration
+
+const vSalad1 = vegetableProcessor(20, 10, 30);
+const vSalad2 = vegetableProcessor(5, 2, 60);
+
+console.log(vSalad1);
+console.log(vSalad2);
+*/
 
 
