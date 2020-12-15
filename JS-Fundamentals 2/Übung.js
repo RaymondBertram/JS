@@ -435,7 +435,7 @@ const ray = [firstName, 'Bertram', 2020 - 2000, 'student', friends];
 
 console.log(ray);
 console.log(ray.length)
-*/
+
 
 //Array-Exercise
 const calcAge = birthYear => 2020 - birthYear;
@@ -450,8 +450,33 @@ console.log(age1, age2, age3);
 const ages = [calcAge(years[1]), calcAge(years[2]), calcAge(years[years.length - 1])];
 
 console.log(ages);
+*/
 
+const friends = ['Michael', 'Steven', 'Bernd', 'Dennis'];
+console.log(friends);
 
+friends.push('Jay'); //adds elements to the end of an array
+console.log(friends);
+
+friends.unshift('John'); //adds elements to the beginning of an array
+console.log(friends);
+
+friends.pop(); //removes the last element of an array
+console.log(friends);
+
+friends.shift(); // removes the first element of an array
+console.log(friends);
+
+console.log(friends.indexOf('Bernd'));
+
+console.log(friends.includes('Steven'));
+console.log(friends.includes('Bernd'));
+
+if (friends.includes('Bob')) {
+    console.log('You have a friend called Bernd');
+} else {
+    console.log('Who is this?');
+}
 
 
 
