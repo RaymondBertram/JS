@@ -489,8 +489,38 @@ age2 >= 65 ? console.log('You are to old to work!') : console.log('Workbee!');
 let gender = 'female';
 gender = 'male'
 gender === 'male' ? console.log('You are a man!') : console.log('You are a woman!');
+
+
+const calcAge4 = birthyear => 2090 - birthyear;
+
+const age10 = calcAge4(2000);
+console.log(age10);
+
+const calculator = (a, b, c, d, e) => (a + b + c + d + e);
+
+let age11 = calculator(1, 2, 3, 4, 5);
+console.log(age11)
 */
+const calcAgeOld = function (birthyear2) {
+    return 2020 - birthyear2;
+}
 
+const old1 = calcAgeOld(1946);
+const old2 = calcAgeOld(1933);
 
+console.log(old1);
+console.log(old2);
 
+const friendsCalc = newfriend => newfriend;
 
+const friends = ['Bob', 'Mike', 'Harvey', 'Dillion'];
+
+const friend1 = friendsCalc(friends[0]);
+const friend2 = friendsCalc(friends[1]);
+const friend3 = friendsCalc(friends[2]);
+const friend4 = friendsCalc(friends[friends.length - 1]);
+
+console.log(friend1);
+console.log(friend2);
+console.log(friend3);
+console.log(friend4); 
