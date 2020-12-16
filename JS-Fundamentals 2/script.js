@@ -193,7 +193,7 @@ console.log(age1, age2, age3);
 
 const ages = [calcAge(years[0]), calcAge(years[1]), calcAge(years[years.length - 1])];
 console.log(ages);
-*/
+
 
 const friends = ['Michael', 'Steven', 'Peter'];
 
@@ -227,3 +227,41 @@ console.log(friends);
 if (friends.includes('Steven')) {
     console.log('You have a friends called Steven!')
 }
+
+
+const jonasArray = [
+    'Jonas',   //firstName
+    'Schmedtmann',//lastName
+    2037 - 1991, //age
+    'teacher' // Job
+    ['Michael', 'Peter', 'Steven'] //friends
+];
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+*/
+
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    age: 2037 - 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven']
+};
+
+console.log(jonas.lastName);
+console.log(jonas['lastName']);
+
+const nameKey = 'Name';
+console.log(jonas['first' + nameKey]);
+console.log(jonas['last' + nameKey]);
+
+const interestedIn = prompt('What do you wnat to know about Jonas? Choose between firstName, lastName, age, job and friends ');
+
+console.log(jonas[interestedIn]);
+
