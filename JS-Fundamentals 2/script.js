@@ -263,5 +263,21 @@ console.log(jonas['last' + nameKey]);
 
 const interestedIn = prompt('What do you wnat to know about Jonas? Choose between firstName, lastName, age, job and friends ');
 
-console.log(jonas[interestedIn]);
+
+
+if (jonas[interestedIn]) {
+    console.log(jonas[interestedIn]);
+} else {
+    console.log('Wrong request! Choose between firstName, lastName, age, job and friends')
+}
+
+jonas.location = 'Portugal';
+jonas['twitter'] = '@jonasschmedtman';
+console.log(jonas);
+
+//Challenge
+//"Jonas has 3 friends, and his best friend is called Michael"
+
+console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+
 
