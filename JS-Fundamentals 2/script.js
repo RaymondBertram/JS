@@ -244,7 +244,6 @@ const jonas = {
     job: 'teacher',
     friends: ['Michael', 'Peter', 'Steven']
 };
-*/
 
 const jonas = {
     firstName: 'Jonas',
@@ -260,6 +259,7 @@ console.log(jonas['lastName']);
 const nameKey = 'Name';
 console.log(jonas['first' + nameKey]);
 console.log(jonas['last' + nameKey]);
+
 
 const interestedIn = prompt('What do you wnat to know about Jonas? Choose between firstName, lastName, age, job and friends ');
 
@@ -279,5 +279,38 @@ console.log(jonas);
 //"Jonas has 3 friends, and his best friend is called Michael"
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
+*/
+
+//Object method
+const jonas = {
+    firstName: 'Jonas',
+    lastName: 'Schmedtmann',
+    birthYear: 1991,
+    job: 'teacher',
+    friends: ['Michael', 'Peter', 'Steven'],
+    hasDriversLicense: true,
+
+    //calcAge: function (birthYear) {
+    //    return 2037 - birthYear;
+    //}
+
+    //calcAge: function () {
+    //    console.log(this);   // for THIS object 
+    //    return 2037 - this.birthYear;
+    //}
+
+    calcAge: function () {
+        this.age = 2037 - this.birthYear;
+        return this.age;
+    }
+};
+
+console.log(jonas.calcAge());
+console.log(jonas.calcAge());
+console.log(jonas.calcAge());
+console.log(jonas.age);
+
+
+//console.log(jonas['calcAge'](1991));
 
 
