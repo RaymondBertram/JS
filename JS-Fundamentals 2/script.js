@@ -279,7 +279,7 @@ console.log(jonas);
 //"Jonas has 3 friends, and his best friend is called Michael"
 
 console.log(`${jonas.firstName} has ${jonas.friends.length} friends, and his best friend is called ${jonas.friends[0]}`);
-*/
+
 
 //Object method
 const jonas = {
@@ -295,7 +295,7 @@ const jonas = {
     //}
 
     //calcAge: function () {
-    //    console.log(this);   // for THIS object 
+    //    console.log(this);   // for THIS object
     //    return 2037 - this.birthYear;
     //}
 
@@ -314,8 +314,28 @@ const jonas = {
 console.log(jonas.calcAge());
 console.log(jonas.age);
 
-//Challenge 
+//Challenge
 //Jonas is  a 46 year old teacher and he has a/no driver's license
 
 console.log(jonas.getSummary());
+
+
+//Loops
+//Cmd +/ ausklammern(comment)
+console.log('Lifting weights repitition 1');
+console.log('Lifting weights repitition 2');
+console.log('Lifting weights repitition 3');
+console.log('Lifting weights repitition 4');
+console.log('Lifting weights repitition 5');
+console.log('Lifting weights repitition 6');
+console.log('Lifting weights repitition 7');
+console.log('Lifting weights repitition 8');
+console.log('Lifting weights repitition 9');
+console.log('Lifting weights repitition 10');
+*/
+//for loop keeps running while condition is TRUE
+for (let rep = 1; rep <= 10; rep++) {
+    console.log('Lifting weights repetition 1');
+}
+
 
