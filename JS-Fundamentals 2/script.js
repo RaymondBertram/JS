@@ -390,9 +390,9 @@ for (let i = 0; i < jonas.length; i++) {
 
     console.log(jonas[i]), typeof jonas[i];
 }
-*/
 
-// Looping Backwards and Loops in Loops 
+
+// Looping Backwards 
 const jonas = [
     'Jonas',   //firstName
     'Schmedtmann',//lastName
@@ -400,5 +400,20 @@ const jonas = [
     'teacher', // Job
     ['Michael', 'Peter', 'Steven'], //friends
     true
-
 ];
+
+//4,3,...,0
+
+for (let i = jonas.length - 1; i >= 0; i--) {
+    console.log(i, jonas[i]);
+}
+*/
+
+//Loops in Loops 
+for (let exercise = 1; exercise < 4; exercise++) {
+    console.log(`--Starting exercise ${exercise}`);
+
+    for (let rep = 1; rep < 6; rep++) {
+        console.log(`Exercise ${exercise}: Lifting weight repitition ${rep}`);
+    }
+}
