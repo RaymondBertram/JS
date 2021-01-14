@@ -337,7 +337,7 @@ console.log('Lifting weights repitition 10');
 for (let rep = 1; rep <= 30; rep++) {
     console.log(`Lifting weights repetition ${rep}`);
 };
-*/
+
 
 
 //Looping Array, breaking and Continuing
@@ -390,5 +390,15 @@ for (let i = 0; i < jonas.length; i++) {
 
     console.log(jonas[i]), typeof jonas[i];
 }
+*/
 
+// Looping Backwards and Loops in Loops 
+const jonas = [
+    'Jonas',   //firstName
+    'Schmedtmann',//lastName
+    2037 - 1991, //age
+    'teacher', // Job
+    ['Michael', 'Peter', 'Steven'], //friends
+    true
 
+];
