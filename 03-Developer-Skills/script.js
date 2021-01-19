@@ -43,6 +43,8 @@ console.log(amplitude);
 // 2) Breaking up into sub-problems
 // -  Merge 2 arrays
 
+//.concat is the solution--> MDN website
+
 const calcTempAmplitudeNew = function (t1, t2) {
   const array1 = ['a', 'b', 'c'];
   const array2 = ['d', 'e', 'f'];
