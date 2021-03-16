@@ -15,7 +15,7 @@ const secretNumber = Math.trunc(Math.random() * 20) + 1;
 
 let score = 20;
 
-document.querySelector('.number').textContent = secretNumber;
+
 
 document.querySelector('.check').addEventListener('click', function () {
   const guess = Number(document.querySelector('.guess').value);
@@ -27,6 +27,7 @@ document.querySelector('.check').addEventListener('click', function () {
     //When player wins
   } else if (guess === secretNumber) {
     document.querySelector('.message').textContent = 'Correct Number!';
+    document.querySelector('.number').textContent = secretNumber;
 
     document.querySelector('body').style.backgroundColor = '#60b347';
 
@@ -56,3 +57,14 @@ document.querySelector('.check').addEventListener('click', function () {
     }
   }
 });
+
+//Coding Challenge #1
+
+/* Implement a game functionality, so that the player can make a new guess/game! Here is how:
+
+1. Select the element with the 'again' class and attach a event handler
+2. In the handler function, restore initial values of the score and number variables
+3. Restore the initial conditions of the message, number, score and guess input field 
+4. Also restore the original backgroundcolor (#222) and number width (15rem)
+
+*/
