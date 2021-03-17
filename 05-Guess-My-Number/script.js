@@ -38,6 +38,22 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.highscore').textContent = highscore;
     }
 
+    //When guess is wrong
+  } else if (guess !== secretNumber) {
+    if (score > 1) {
+      document.querySelector('.message').textContent =
+        guess > secretNumber ? 'Too high!' : 'Too low!';
+      score--; //score = score - 1;
+      document.querySelector('.score').textContent = score;
+    } else {
+      document.querySelector('.message').textContent = 'You lost the game!';
+      document.querySelector('.score').textContent = 0;
+    }
+  }
+});
+
+// Code replaced because the code should be clean
+/*
     //When score is too high
   } else if (guess > secretNumber) {
     if (score > 1) {
@@ -61,7 +77,7 @@ document.querySelector('.check').addEventListener('click', function () {
       document.querySelector('.score').textContent = 0;
     }
   }
-});
+  */
 
 //Coding Challenge #1
 
