@@ -43,19 +43,17 @@ const z = 3;
 console.log(x === window.x);
 console.log(y === window.y);
 console.log(z === window.z);
-*/
 
-console.log(this);
 
 const calcAge = function (birthyear) {
   console.log(2037 - birthyear);
-  console.log(this);
+  //   console.log(this);
 };
 calcAge(1991);
 
 const calcAgeArrow = birthyear => {
   console.log(2037 - birthyear);
-  console.log(this);
+  //   console.log(this);
 };
 calcAge(1980);
 
@@ -67,3 +65,57 @@ const jonas = {
   },
 };
 jonas.calcAge();
+
+const mathilda = {
+  year: 2017,
+};
+mathilda.calcAge = jonas.calcAge; // method borrowing, get method from another object
+mathilda.calcAge();
+
+const f = jonas.calcAge;
+f();
+
+// var firstName = 'Mathilda';
+const jonas = {
+  firstName: 'Jonas',
+  year: 1991,
+  calcAge: function () {
+    // console.log(this);
+    console.log(2037 - this.year);
+    //Solution 1
+    // const self = this; //self or that
+    // const isMillenial = function () {
+    //   console.log(self);
+    //   console.log(self.year >= 1981 && self.year <= 1996);
+    // };
+    //Solution 2
+    const isMillenial = () => {
+      console.log(this);
+      console.log(this.year >= 1981 && this.year <= 1996);
+    };
+    isMillenial();
+  },
+
+  greet: () => {
+    console.log(this);
+    console.log(`Hey ${this.firstName}!`);
+  },
+};
+
+jonas.greet();
+jonas.calcAge();
+
+//Arguments keyword
+const addExpr = function (a, b) {
+  console.log(arguments);
+  return a + b;
+};
+addExpr(2, 5);
+addExpr(2, 5);
+
+var addArrow = (a, b) => {
+  console.log(arguments);
+  return a + b;
+};
+addArrow(2, 4, 6);
+*/
