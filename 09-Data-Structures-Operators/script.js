@@ -39,8 +39,83 @@ const restaurant = {
       `Here is you delicious pasta with ${ing1}, ${ing2} and ${ing3}. `
     );
   },
+  orderPizza: function (mainIngredient, ...otherIngredients) {
+    console.log(mainIngredient);
+    console.log(otherIngredients);
+  },
 };
+//////////////////////////
+//Start Circuting
+console.log('---OR---');
+//Use ANY data type, return ANY data type, short circuiting
+console.log(3 || 'Jonas');
+console.log('' || 'Jonas'); //falsy --> Jonas
+console.log(true || 0); //-->true = truthy
+console.log(undefined || null); //undefinded is falsy --> null
+console.log(undefined || 0 || '' || 'hello' || 23 || null); //first truthy value is 'hello'
 
+//
+restaurant.numGuests = 23;
+const guest1 = restaurant.numGuest ? restaurant.numGuests : 10;
+console.log(guest1);
+
+const guests2 = restaurant.numGuests || 10;
+console.log(guests2);
+console.log('---AND---');
+console.log(0 && 'Jonas');
+console.log(7 && 'Jonas');
+//all values have to be true
+
+console.log('Hello' && 23 && null && 'Jonas'); //Null because there is the falsy value --> whole result false
+//
+//Practise example
+if (restaurant.orderPizza) {
+  restaurant.orderPizza('spinach', 'mushrooms');
+}
+
+restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'salami');
+
+/*
+/////////////////////////////
+//Rest-patterns
+// 1) Destructering
+//SPREAD because on RIGHT side of =
+const arr = [1, 2, ...[3, 4]];
+console.log(arr);
+//REST because on left side of =
+const [a, b, ...others] = [1, 2, 3, 4, 5];
+console.log(a, b, others);
+
+const [pizza, , risotto, ...otherFood] = [
+  ...restaurant.mainMenu,
+  ...restaurant.starterMenu,
+];
+console.log(pizza, risotto, otherFood);
+
+//Objects
+const { sat, ...weekdays } = restaurant.openingHours;
+console.log(weekdays);
+
+//2) Functions
+const add = function (...numbers) {
+  console.log(numbers);
+  let sum = 0;
+  for (let i = 0; i < numbers.length; i++) sum += numbers[i];
+  console.log(sum);
+};
+add(2, 3);
+add(5, 3, 7, 2);
+add(4, 5, 6, 7, 8, 1);
+
+const x = [23, 5, 7];
+add(...x);
+
+restaurant.orderPizza('mushrooms', 'onion', 'spinage');
+restaurant.orderPizza('salami');
+*/
+/*
+///////////////////////////////////////
+//The Spread Operator (...)
 const arr = [7, 8, 9];
 const badNewArray = [1, 2, arr[0], arr[1], arr[2]];
 console.log(badNewArray);
@@ -91,7 +166,7 @@ console.log(restaurantCopy.name);
 console.log(restaurant.name);
 
 //Iterables: arrays, strings, maps, sets. NOT objects
-
+*/
 /*
 restaurant.orderDelivery({
   time: '22:30',
