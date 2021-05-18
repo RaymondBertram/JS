@@ -44,6 +44,16 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+////////////////////////////
+//The Nullish Coalescing Operator (??)
+restaurant.numGuests = 0;
+const guests = restaurant.numGuests || 10;
+console.log(guests);
+
+//Nullish: null and undefined
+const guestsCorrect = restaurant.numGuests ?? 10;
+console.log(guestsCorrect);
+/*
 //////////////////////////
 //Start Circuting
 console.log('---OR---');
@@ -74,7 +84,7 @@ if (restaurant.orderPizza) {
 }
 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'salami');
-
+*/
 /*
 /////////////////////////////
 //Rest-patterns
