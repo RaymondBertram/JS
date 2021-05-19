@@ -305,3 +305,25 @@ const game = {
     team2: 6.5,
   },
 };
+
+// 1) Create one player array for each team (variables 'players1' and 'player2')
+
+const [players1, players2] = game.players;
+console.log(players1, players2);
+
+// 2) The first player in any player array is the goalkeeper and the others are the field players. For Bayern Munich (team1) create one variable ('gk') with the goalkeeper's name and one array ('fieldplayers) with all the remaining 10 field players.
+
+const [team1gk, ...team1fieldPlayers] = players1;
+console.log(team1gk, team1fieldPlayers);
+
+const [team2gk, ...team2fieldPlayers] = players2;
+console.log(team2gk, team2fieldPlayers);
+
+//3) Create an array 'allPlayers' containing all plaaers of both teams (22 Players)
+const allPlayers = [...players1, ...players2];
+console.log(allPlayers);
+
+//4) During the game Bayern Munich (team1) used 3 substitute players. So create a new array ('playersFinal') containing all the original team 1 players plus 'Thiago', 'Coutinho', 'Perisic'
+const [playersFinal] = [...players1, ''];
+console.log(playersFinal)
+
