@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
@@ -44,7 +44,7 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
-
+*/
 /*
 ////////////////////////////
 //The Nullish Coalescing Operator (??)
@@ -262,3 +262,46 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 */
+
+///////////////////////////////////////////
+//Coding-Challenge #1 //
+const game = {
+  team1: 'Bayern Munich',
+  team2: 'Borrussia Dortmund',
+  players: [
+    [
+      'Neuer',
+      'Pavard',
+      'Martinez',
+      'Alaba',
+      'Davies',
+      'Kimmich',
+      'Goretzka',
+      'Coman',
+      'Müller',
+      'Gnarby',
+      'Lewandowski',
+    ],
+    [
+      'Bürki',
+      'Schulz',
+      'Hummels',
+      'Akanji',
+      'Hakimi',
+      'Weigl',
+      'Witsel',
+      'Harzard',
+      'Brandt',
+      'Sancho',
+      'Götze',
+    ],
+  ],
+  score: '4:0',
+  scored: ['Lewandowski', 'Gnarby', 'Lewandowski', 'Hummels'],
+  date: 'Nov 9th, 2037',
+  odds: {
+    team1: 1.33,
+    x: 3.25,
+    team2: 6.5,
+  },
+};
