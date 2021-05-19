@@ -44,6 +44,8 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+
+/*
 ////////////////////////////
 //The Nullish Coalescing Operator (??)
 restaurant.numGuests = 0;
@@ -53,6 +55,7 @@ console.log(guests);
 //Nullish: null and undefined
 const guestsCorrect = restaurant.numGuests ?? 10;
 console.log(guestsCorrect);
+*/
 /*
 //////////////////////////
 //Start Circuting
