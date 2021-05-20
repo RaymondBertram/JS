@@ -1,5 +1,5 @@
 'use strict';
-/*
+
 const restaurant = {
   name: 'Classico Italiano',
   location: 'Via Angelo Tavanti 23, Firenze, Italy',
@@ -44,7 +44,16 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
-*/
+/////////////////////////////
+//For-of-Loop//
+const menu = [...restaurant.mainMenu, ...restaurant.starterMenu];
+//
+for (const item of menu) console.log(item);
+
+for (const [i, el] of menu.entries()) {
+  console.log(` ${i + 1}: ${el}`);
+}
+
 /*
 ////////////////////////////
 //The Nullish Coalescing Operator (??)
@@ -87,7 +96,7 @@ if (restaurant.orderPizza) {
 }
 
 restaurant.orderPizza && restaurant.orderPizza('mushrooms', 'salami');
-*/
+
 /*
 /////////////////////////////
 //Rest-patterns
@@ -265,6 +274,7 @@ console.log(p, q, r);
 
 ///////////////////////////////////////////
 //Coding-Challenge #1 //
+/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -316,7 +326,8 @@ const game = {
     }
   },
 };
-
+*/
+/*
 // 1) Create one player array for each team (variables 'players1' and 'player2')
 console.log('---1---');
 const [players1, players2] = game.players;
@@ -368,4 +379,4 @@ printGoals2(...game.scored);
 console.log('---7---');
 
 team1 < team2 && console.log('team1 is more likely to win !');
-
+*/
