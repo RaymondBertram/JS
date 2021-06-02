@@ -42,6 +42,51 @@ const restaurant = {
   },
 };
 
+
+
+
+
+
+
+
+/*
+///////////////////////////////////////////
+//Sets
+const ordersSet = new Set([
+  'Pasta',
+  'Pizza',
+  'Pizza',
+  'Risotto',
+  'Pasta',
+  'Pizza',
+]);
+console.log(ordersSet);
+//String
+console.log(new Set('Jonas'));
+//.size =sum
+console.log(ordersSet.size);
+//In
+console.log(ordersSet.has('Pizza'));
+console.log(ordersSet.has('Bread'));
+//add elements
+ordersSet.add('Garlic Bread');
+//Delete elements
+ordersSet.delete('Risotto');
+// ordersSet.clear();
+console.log(ordersSet);
+
+for (const order of ordersSet) console.log(order);
+
+//Example
+const staff = ['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter'];
+const staffUnique = [...new Set(staff)];
+console.log(staffUnique);
+
+console.log(
+  new Set(['Waiter', 'Chef', 'Waiter', 'Manager', 'Chef', 'Waiter']).size
+);
+console.log(new Set('raymondbertram').size);
+*/
 /*
 ///////////////////////
 //Looping objects: Object keys, values and entries
@@ -323,5 +368,4 @@ const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 */
 
-///////////////////////////////////////////
 

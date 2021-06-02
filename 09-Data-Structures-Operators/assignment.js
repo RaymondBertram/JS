@@ -77,10 +77,17 @@ console.log('----2----');
 const odds = Object.values(game.odds);
 let average = 0;
 for (const odd of odds) average += odd;
-average /= odds.length;
+// console.log(average); 11,08 --> Sum of odd
+average /= odds.length; // Average divided by 3
 console.log(average);
+//3
+console.log('----3----');
+for (const [team, odd] of Object.entries(game.odds)) {
+  const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
+  console.log(`Odd of ${teamStr}: ${odd}`);
+}
 
-/*
+/*  
   //Coding-Challenge #1 //
   // 1) Create one player array for each team (variables 'players1' and 'player2')
   console.log('---1---');
