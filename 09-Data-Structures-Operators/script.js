@@ -43,8 +43,12 @@ const restaurant = {
 };
 
 
-//////////////////////////////////////////
-//Maps
+
+
+
+
+
+
 
 
 
@@ -52,6 +56,42 @@ const restaurant = {
 
 
 /*
+//////////////////////////////////////////
+//Maps
+const rest = new Map();
+rest.set('name', 'Classico Italiano');
+rest.set(1, 'Firenz, Italy');
+console.log(rest.set(2, 'Lisbon, Portugal'));
+
+rest
+  .set('categories', ['Italian', 'Pizzeria', 'Vegetarian', 'Organic'])
+  .set('open', 11)
+  .set('close', 23)
+  .set(true, 'We are open:D')
+  .set(false, 'We are closed:(');
+
+// console.log(rest.get('name'));
+// console.log(rest.get(true));
+// console.log(rest.get(1));
+
+const time = 22;
+console.log(rest.get(time > rest.get('open') && time < rest.get('close')));
+//Contains
+console.log(rest.has('categories'));
+//Delete
+rest.delete(2);
+//Clear
+// rest.clear();
+const arr = [1, 2];
+rest.set(arr, 'Test');
+rest.set(document.querySelector('h1'), 'heading'); //DOM
+console.log(rest);
+//Size
+console.log(rest.size);
+
+console.log(rest.get(arr));
+*/
+/*);  
 ///////////////////////////////////////////
 //Sets
 const ordersSet = new Set([
@@ -369,5 +409,3 @@ console.log(i, j, k);
 const [p = 1, q = 1, r = 1] = [8, 9];
 console.log(p, q, r);
 */
-
-
