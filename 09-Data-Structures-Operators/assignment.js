@@ -1,5 +1,5 @@
 'use strict';
-
+/*
 const game = {
   team1: 'Bayern Munich',
   team2: 'Borrussia Dortmund',
@@ -65,7 +65,7 @@ const game = {
          Hummels: 1,
          Lewandowski: 2
   }
-  */
+ 
 //1)
 console.log('----1----');
 
@@ -86,7 +86,7 @@ for (const [team, odd] of Object.entries(game.odds)) {
   const teamStr = team === 'x' ? 'draw' : `victory ${game[team]}`;
   console.log(`Odd of ${teamStr}: ${odd}`);
 }
-
+ */
 /*  
   //Coding-Challenge #1 //
   // 1) Create one player array for each team (variables 'players1' and 'player2')
@@ -141,3 +141,28 @@ for (const [team, odd] of Object.entries(game.odds)) {
   
   team1 < team2 && console.log('team1 is more likely to win !');
   */
+
+//Coding Challenge NR.3
+/*
+  Let's continue with our football betting app! This time, we have a map called 'gameEvents' (see below) with a log of the events that happened during the game. The values are the events themselves, and the keys are the minutes in which each event happened (a football game has 90 minutes plus some extra time).
+  Your tasks:
+  1. Createanarray'events'ofthedifferentgameeventsthathappened(no duplicates)
+  2. Afterthegamehasfinished,iswasfoundthattheyellowcardfromminute64 was unfair. So remove this event from the game events log.
+  3. Computeandlogthefollowingstringtotheconsole:"Aneventhappened,on average, every 9 minutes" (keep in mind that a game has 90 minutes)
+  4. Loopover'gameEvents'andlogeachelementtotheconsole,marking whether it's in the first half or second half (after 45 min) of the game, like this:
+  [FIRST HALF] 17: ⚽   GOAL
+  */
+
+const gameEvents = new Map([
+  [17, 'Goal'],
+  [36, 'Substitution'],
+  [47, 'Goal'],
+  [61, 'Substitution'],
+  [64, 'Yellow Card'],
+  [69, 'Red Card'],
+  [70, 'Substitution'],
+  [72, 'Substitution'],
+  [76, 'Goal'],
+  [80, 'Goal'],
+  [92, 'Yellow Card'],
+]);
