@@ -152,7 +152,7 @@ for (const [team, odd] of Object.entries(game.odds)) {
   4. Loopover'gameEvents'andlogeachelementtotheconsole,marking whether it's in the first half or second half (after 45 min) of the game, like this:
   [FIRST HALF] 17: ⚽   GOAL
   */
-
+/*
 const gameEvents = new Map([
   [17, 'Goal'],
   [36, 'Substitution'],
@@ -198,3 +198,5 @@ for (const [min, event] of gameEvents) {
   const half = min <= 45 ? 'FIRST' : 'SECOND';
   console.log(`[${half}] HALF: ${min}: ${event}`);
 }
+*/
+

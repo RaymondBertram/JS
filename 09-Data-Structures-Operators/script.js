@@ -1,4 +1,5 @@
 'use strict';
+/*
 const weekdays = ['mon', 'tue', 'wed', 'thu', 'fri', 'sat', 'sun'];
 const openingHours = {
   [weekdays[3]]: {
@@ -41,6 +42,65 @@ const restaurant = {
     console.log(otherIngredients);
   },
 };
+*/
+////////////////////////////////////////
+//Working with Strings Part 2
+
+const airline = 'TAP Air Portugal';
+
+console.log(airline.toLowerCase());
+console.log(airline.toUpperCase());
+
+
+
+
+
+
+/*
+////////////////////////////////////////
+//Working with Strings Part I
+const airline = 'TAP Air Portugal';
+const plane = 'A320';
+//letters
+console.log(plane[0]);
+console.log(plane[1]);
+console.log(plane[2]);
+console.log(plane[3]);
+console.log('B737'[0]);
+//length
+console.log(airline.length);
+console.log('B737'.length);
+//indexOf
+console.log(airline.indexOf('r'));
+console.log(airline.lastIndexOf('r'));
+console.log(airline.indexOf('portugal'));
+//Slice
+console.log(airline.slice(4));
+console.log(airline.slice(4, 7));
+
+console.log(airline.slice(0, airline.indexOf(' ')));
+console.log(airline.slice(airline.lastIndexOf(' ') + 1));
+
+console.log(airline.slice(-2));
+console.log(airline.slice(1, -1));
+
+const checkMiddleSeat = function (seat) {
+  //B and E are middle seats
+  const s = seat.slice(-1);
+  if (s === 'B' || s === 'E') {
+    console.log('You get the middle seat');
+  } else {
+    console.log('You got lucky!');
+  }
+};
+checkMiddleSeat('11B');
+checkMiddleSeat('3E');
+checkMiddleSeat('23C');
+
+console.log(new String('jonas'));
+console.log(typeof new String('jonas'));
+*/
+/*
 ///////////////////////////////////
 //Maps:Iteration
 
@@ -74,6 +134,7 @@ console.log([...question]);
 console.log([...question.entries()]); //keys and values
 console.log([...question.keys()]); //keys
 console.log([...question.values()]); //values
+*/
 /*
 //////////////////////////////////////////
 //Maps
